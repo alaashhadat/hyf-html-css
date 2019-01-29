@@ -1,1 +1,138 @@
 
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+}
+header {
+  background-color: #0078d7;
+  width: 100%;
+  height: 100px;
+  
+  left: 0;
+}
+.logo {
+  width: 100px;
+  float: left;
+  margin:20px;
+  margin-top: 20px;
+}
+nav {
+  float: right;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.intro {
+  background-color: gray;
+  padding: 6px;
+}
+
+#netherlands {
+  width: 100%;
+  height: 400px;
+}
+
+.section-1 {
+  background-color: red;
+  height: 500px;
+  padding: 6px;
+}
+
+.section-2 {
+  background-color: aqua;
+  height: 600px;
+  padding: 6px;
+}
+.rijksmonument, .concertgewbouw,  .rijksmuseum, .westerkerk{
+  width: 340px;
+  height: 200px
+}
+
+.rijksmonument {
+  left: 10px;
+  margin-right: 10px;
+}
+
+.rijksmuseum {
+  margin-right: 10px
+}
+
+.section-3 {
+  background-color: skyblue;
+  height: 600px;
+  padding: 6px;
+}
+
+.section-4 {
+  background-color: silver;
+  height: 550px;
+  padding: 6px;
+}
+.history-pic-1{
+  float: left;
+  width:200px;
+  margin-right:6px;
+}
+.history-pic-2 {
+  float:right;
+  width:200px;
+  margin-left:6px;
+}
+
+.table-container {
+  margin-left: 300px;
+  margin-bottom: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.gas-pic{
+  float:left;
+  width:150px;
+  margin-right:6px;
+}
+.agriculture-pic {
+float:right;
+width:15%;
+margin-right:20px;
+}
+.the-hague-school{
+  float:left;
+}
+.the-hague-school, .amsterdam-uni {
+  width: 450px;
+  margin-right:20px;
+  margin-left:20px;
+  height: 300px;
+ }
+
+.utrecht-uni {
+  width: 400px;
+  margin-left:10px;
+  height: 300px;
+}
+
+footer {
+  background-color: #0078d7;
+  width: 100%;
+  height: 50px;
+  text-align: center; 
+}
