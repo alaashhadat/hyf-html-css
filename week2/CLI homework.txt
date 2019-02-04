@@ -1,0 +1,56 @@
+1. create hidden file and show it via CLI:
+* create:
+Loulous-MacBook-Air:desktop louloushehadat$ touch .test.txt
+
+* display:
+Loulous-MacBook-Air:desktop louloushehadat$ ls -a
+.		.localized	download.jpeg	training	week1
+..		.test.txt	practice 	untitled folder	week2
+.DS_Store	cli.txt		statusexam2	week0
+
+****************************************
+2. create multiple nested directories:
+Loulous-MacBook-Air:desktop louloushehadat$ mkdir -p these/folders/are/just/for/fun 
+Loulous-MacBook-Air:desktop louloushehadat$ ls
+cli.txt			statusexam2		untitled folder		week1
+download.jpeg		these			untitled folder 2	week2
+practice 		training		week0
+Loulous-MacBook-Air:desktop louloushehadat$ cd these
+Loulous-MacBook-Air:these louloushehadat$ ls
+folders
+Loulous-MacBook-Air:these louloushehadat$ cd folders
+Loulous-MacBook-Air:folders louloushehadat$ ls
+are
+Loulous-MacBook-Air:folders louloushehadat$ cd are
+Loulous-MacBook-Air:are louloushehadat$ ls
+just
+Loulous-MacBook-Air:are louloushehadat$ cd just
+Loulous-MacBook-Air:just louloushehadat$ ls
+for
+Loulous-MacBook-Air:just louloushehadat$ cd for
+Loulous-MacBook-Air:for louloushehadat$ ls
+fun
+Loulous-MacBook-Air:for louloushehadat$ 
+
+*************************************
+
+3. verify number of characters in file
+Loulous-MacBook-Air:for louloushehadat$ cd fun
+Loulous-MacBook-Air:fun louloushehadat$ touch fun.txt
+Loulous-MacBook-Air:fun louloushehadat$ echo "test" > fun.txt
+Loulous-MacBook-Air:fun louloushehadat$ 
+Loulous-MacBook-Air:fun louloushehadat$ echo "another test" >> fun.txt
+Loulous-MacBook-Air:fun louloushehadat$ wc -c fun.txt
+      18 fun.txt
+Loulous-MacBook-Air:fun louloushehadat$ 
+
+************************************
+4 append something in the file *WITHOUT* a newline character
+Loulous-MacBook-Air:fun louloushehadat$ echo -n "test" >> fun.txt
+Loulous-MacBook-Air:fun louloushehadat$ echo -n "another test" >> fun.txt
+Loulous-MacBook-Air:fun louloushehadat$ cat fun.txt
+test
+another test
+testanother testLoulous-MacBook-Air:fun louloushehadat$ Loulous-MacBook-Air:fun louloushehadat$ 
+
+
