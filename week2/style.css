@@ -1,0 +1,93 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background:url(images/header-background.jpg);
+
+}
+
+h1,h2,h3{
+    color: aqua;
+    background-color: beige;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    max-height: 250px;
+}
+#grid-floats{
+    overflow: hidden;
+}
+#grid-floats .grid-item {
+    float: left;
+}
+.grid-item {
+    border:1px solid black;
+    border-radius: 20px;
+    
+    width: calc(100% - 10px);
+    margin: 5px;
+    padding: 5px;
+    min-height: 500px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#grid-flex{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+.grid-item:nth-child(n + 2){
+    width: calc(50% - 10px);
+}
+
+.grid-item:first-child img {
+    animation-name: fly;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+@keyframes fly {
+    0% {transform: translateX(0)}
+    50% {transform: translateX(350px)}
+    100% {transform: translateX(0)}
+}
+
+
+
+@media (min-width: 480px){
+    .grid-item:nth-child(n){
+        width: calc(100% / 3 - 10px);
+    }
+
+    .grid-item:nth-child(-n + 2) {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 768px){
+    .grid-item:nth-child(n){
+        width: calc(100% / 4 - 10px);
+
+    }
+    
+    .grid-item:first-child{
+        width: calc(50% - 10px);
+
+    }  
+}
+
+#grid-floats:hover .grid-item:hover p {
+color: orange;
+}
+
+#grid-flex:hover .grid-item:hover p {
+    color: orangered;
+    }
