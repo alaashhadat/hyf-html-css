@@ -1,0 +1,26 @@
+1. create a directory.Enter a directory. Create an empty file named blank.
+Loulous-MacBook-Air:desktop louloushehadat$ mkdir test
+Loulous-MacBook-Air:desktop louloushehadat$ cd test
+Loulous-MacBook-Air:test louloushehadat$ touch blank
+--------------------------------------------------------------------------
+2.Then write the content "Hello" five times to the file greetings.txt.
+   Then copy the file greetings.txt and paste its contents into 1.txt, 2.txt, 3.txt, 4.txt and 5.txt.
+Loulous-MacBook-Air:test louloushehadat$ for i in {1..5}; do echo "hello" >>greetings.txt; done 
+Loulous-MacBook-Air:test louloushehadat$ 
+Loulous-MacBook-Air:test louloushehadat$ cat greetings.txt > 1.txt > 2.txt > 3.txt > 4.txt > 5.txt  
+Loulous-MacBook-Air:test louloushehadat$ 
+----------------------------------------------------------
+3.Then write the text "cat" to pets.txt
+   Then append the text "dog" to pets.txt
+   Then append the text "hamster" to pets.txt-
+------------------------------------------------------
+4.Then write the text "cat" to commands.txt
+   Then append the text "ls" to commands.txt
+   Then append the text "pwd" to commands.txt
+Loulous-MacBook-Air:test louloushehadat$ echo "cat" "ls" "pwd" >> commands.txt
+Loulous-MacBook-Air:test louloushehadat$ 
+-------------------------------------------------------------------------
+5.Then find unique strings from these two files pets.txt and commands.txt
+   and store the unique strings in lovelyCommands.txt
+Loulous-MacBook-Air:test louloushehadat$ sort -u commands.txt pets.txt > lovelycommands.txt
+Loulous-MacBook-Air:test louloushehadat$
