@@ -13,6 +13,9 @@ Loulous-MacBook-Air:test louloushehadat$
 3.Then write the text "cat" to pets.txt
    Then append the text "dog" to pets.txt
    Then append the text "hamster" to pets.txt-
+echo "cat" > pets.text
+echo "dog" >> pets.txt
+echo "hamster" >> pets.txt
 ------------------------------------------------------
 4.Then write the text "cat" to commands.txt
    Then append the text "ls" to commands.txt
@@ -24,3 +27,8 @@ Loulous-MacBook-Air:test louloushehadat$
    and store the unique strings in lovelyCommands.txt
 Loulous-MacBook-Air:test louloushehadat$ sort -u commands.txt pets.txt > lovelycommands.txt
 Loulous-MacBook-Air:test louloushehadat$
+---------------------------------------------
+
+
+
+
