@@ -1,5 +1,6 @@
 *{
     margin:0;
+    padding: 0;
     box-sizing: border-box;
 }
 .logo {
@@ -8,13 +9,26 @@
 nav {
     width:100%;
     height:auto;
-    overflow:hidden;
-    background-color: #01689b;
-    padding:20px 0;
+    background-color: #01689b; 
+    overflow: hidden;
 }
 nav ul {
-    float:right;
-    color:white;   
+    color: white;
+    width: 75%;
+    direction: rtl;
+    float: right;
+}
+nav ul li a{
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+nav span{
+    color: white;
+    font-size: 1.3em;
+    display: inline-block;
+    width: 20%;
+    padding: 2vh 2.7vw;
 }
 #searchform ul {
     width: 23%;
@@ -23,6 +37,7 @@ nav ul {
     color: black;
     padding: 38px;
     list-style: none;
+    direction: rtl;
 }
 #searchform ul li{
     padding:10px 0  ;
@@ -34,7 +49,7 @@ nav ul {
 }
 nav ul li {
     display:inline-block;
-    padding :20px;
+    padding: 2vh .7vw;
 }
 nav .home {
     color:white;
@@ -54,7 +69,6 @@ nav .home {
    background-size: cover;
    background-position: center;
 }
-
 .fix{
     clear:both;
 }
@@ -76,8 +90,6 @@ nav .home {
 .must-viewed h3 {
     font-size:20px;
 }
-
-
 .posts {
     background-color: whitesmoke;
 }
@@ -91,17 +103,17 @@ nav .home {
 }
 .grid-item {
     box-sizing: border-box;
-    padding: 15px;
+    padding: 5px;
     min-height: 68px;
-    margin: 25px;
+    margin: 10px;
     width: calc(100% / 4 - 50px);
     color:#01689b;
     font-size:1.5rem;
 }
 .grid-item h3 {
     text-decoration: underline;
+    font-size: 1em;
 }
-
 .grid-item p {
     color:#000;
     font-size: 1rem;
@@ -123,10 +135,10 @@ nav .home {
 .grid-more-posts-item {
     box-sizing: border-box;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     min-height: 200px;
-    margin: 25px;
-    width: calc(100% / 3 - 50px);
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
    }
 .more-posts-img {
     max-width: 100%;
@@ -143,6 +155,13 @@ nav .home {
 }
 .grid-more-posts h3 {
     color:#01689b;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+.grid-more-posts p{
+    text-align: left;
+    padding: 10px;
 }
 .service ul li a, .about-us ul li a{
     color: white;
@@ -151,21 +170,20 @@ nav .home {
 }
 .for {
     display:block;
+    width: 50%;
 }
-
 .morenews .news{
     height: 10vh;
     background-color:#8a2be200;
     font-family:"RO Sans",Calibri,sans-serif;
    
 }
-
 .morenews .questions{
     display: flex; 
     flex-wrap: wrap;  
 }
 .morenews .questions ul{
-    width: 25%;
+    width: 32%;
     list-style: none;
     margin: 2vw;
 }
@@ -188,13 +206,11 @@ nav .home {
 .morenews .questions ul li.second p{
     margin: 3vh;
 }
-
 .morenews p a {
 font-family:"RO Sans",Calibri,sans-serif;  
 font-size:1.8em;
 color:#000;
 }
-
 .news-ticker ul {
 list-style:none;
 display:flex;
@@ -212,6 +228,7 @@ min-height:200px;
     color: black;
     text-decoration: none;
     font-size: 1.5em;
+    padding: 5px 30px;
 }
     
 .news-ticker ul li a {
@@ -219,10 +236,12 @@ min-height:200px;
     text-decoration:underline;
     font-size:23px;
   }
+.news-ticker h2{
+    padding: 5px 30px;
+}
   .news-ticker p{
 font-size:1rem;
   }
-
   .language span{
     border:1px solid #CBD2E3;
     text-align:center;
@@ -238,6 +257,7 @@ footer {
     color: white;
     display:flex;
     flex-wrap:wrap;
+    padding: 20px;
 }
 footer h3{
     font-size: 1.7em;
@@ -246,10 +266,10 @@ footer ul {
     list-style:none;
 }
 footer .service{
-    display:flex;
-    padding:0vw;
+    display:flex;   
     width:50%;
     float:right; 
+    margin: 5px 20px;
 }
 footer .about-us {
     display:flex;
@@ -257,28 +277,74 @@ footer .about-us {
 footer ul li{
     padding: 1vh 0;
 }
-@media (max-width: 482px){
-    .news-ticker ul li {
-    width: calc(100%/1);
-    padding: 37px;
-    }
-     .morenews .questions ul {
-        width: 100%;
-        list-style: none;
-        margin: 2vw;
-    }
-}
-@media (min-width: 760px){
-}
-
-@media (max-width: 1000px){
+@media(max-width:900px){
     .grid-item {
-       width: calc(100% / 3 - 50px);
-       
+         width: calc(90% / 2 - 0px);
+         min-height: 120px;
+     } 
+     .grid-more-posts-item{
+         width: calc(94% / 2 - 10px);
+     } 
+     .news-ticker ul li {
+         width: calc(100%/2);
+     }
+ }
+@media(max-width:760px){
+    nav ul{
+        display: none;
     }
+    .grid-item {
+         width: calc(100% / 1 - 10px);
+     }
+    .grid-more-posts-item {
+        width: calc(100% / 1- 10px);
 }
-
-
+     .news-ticker ul li {
+     width: calc(100%/ 2);
+     }
+    .morenews .questions ul{
+        width:45%;
+    }
+    .morenews .questions ul li h3{
+        font-size: 1.7em;
+    }
+    .for{
+        width: 100%;
+    }
+    .for:first-child{
+        width: 100%;
+    }
+    footer h3{
+        font-size: 1.5em;
+    }
+    
+}
+ @media (max-width: 480px){
+     .grid-item {
+         width: calc(100% / 1 - 10px);
+     }
+     .grid-more-posts-item {
+    width: calc(100% / 1);
+     }
+     .news-ticker ul li {
+     width: calc(100%/1);
+     }
+     .morenews .questions ul li h3{
+         font-size: 1.4em;
+     }
+     .morenews .questions{
+         display:block;
+     }
+     .morenews .questions ul{
+         width: 80%;
+         margin: auto;
+         margin-bottom: 2vh;
+     }
+     .for {
+         width: 100%;
+         padding: 10px;
+     }    
+ }
 
 
 
