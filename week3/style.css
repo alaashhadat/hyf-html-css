@@ -12,13 +12,16 @@ body {
 .logo {
   text-align: center;
 }
+.logo img{
+  margin-left: 30vh;
+}
 .nav {
-  height: auto;
+  /*height: auto;*/
   background-color: #01689b;
   overflow: hidden;
   border-bottom: 1px solid #01689b;
   text-align: right;
-  height: 70px;
+  /*height: 70px;*/
   line-height: 70px;
 }
 .menu {
@@ -36,7 +39,7 @@ body {
   color: white;
 }
 .nav .menu {
-  padding: 2vh 2.7vw;
+  padding: 0vh 2.7vw;
   float: right;
 }
 .nav label {
@@ -46,7 +49,13 @@ body {
   display: none;
   width: 26px;
 }
-
+.form0{
+  height: 100px;
+  display: none;
+}
+i{
+  font-weight: 500;
+}
 #toggle {
   display: none;
 }
@@ -63,20 +72,25 @@ body {
   padding: 10px 0;
 }
 .searchinput {
-  width: 50%;
-  background-color: white;
-  height: 40px;
-  transform: translate(-2%, 8%);
-  border-radius: 40px;
+    width: 75%;
+    background-color: white;
+    height: 45px;
+    display: none;
+}
+.hidden{
+  display: block;
 }
 button {
-  background-color: black;
-  padding: 6px 10px;
-  margin-top: 16px;
-  font-size: 17px;
+  background-color:#01689b;
+  /* padding: 6px 10px; */
+  /* margin-top: 16px; */
+  font-size: 21px;
   border: none;
+  width: 46px;
+  height: 46px;
   cursor: pointer;
-  color: black;
+  color: white;
+  /* float: right; */
 }
 button:hover {
   background: white;
@@ -85,7 +99,6 @@ button:hover {
   width: 100%;
 }
 .searchform {
-  text-align: center;
   font-size: 1em;
   width: 100%;
   color: white;
@@ -99,9 +112,10 @@ button:hover {
   clear: both;
 }
 .form {
-  width: 40%;
+  width: 50%;
   height: 10vh;
   float: right;
+  margin-top: 4vh;
 }
 .must-viewed {
   font-family: sans-serif;
@@ -113,7 +127,6 @@ button:hover {
   padding: 32px;
   list-style: none;
 }
-
 .must-viewed h3 {
   font-size: 20px;
 }
@@ -257,7 +270,6 @@ button:hover {
   font-size: 1.5em;
   padding: 5px 30px;
 }
-
 .news-ticker ul li a {
   color: #01689b;
   text-decoration: underline;
@@ -316,7 +328,40 @@ footer ul li {
     width: calc(100% / 2);
   }
 }
+button{
+  display: none;
+}
+.show{
+  display: none;
+} 
 @media (max-width: 760px) {
+  .nav label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    /*display: none;*/
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  button{
+    display: block;
+    float: left;
+  }
+  nav .menu{
+    display: none;
+  }
+  .searchinput{
+    display: block;
+    margin: auto;
+  }
   .grid-item {
     width: calc(100% / 1 - 10px);
   }
@@ -350,6 +395,9 @@ footer ul li {
     background-color: white;
     padding: 32px;
     list-style: none;
+  }
+  .form{
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -394,7 +442,6 @@ footer ul li {
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
   }
   .menu a {
     display: block;
@@ -404,23 +451,3 @@ footer ul li {
     display: block;
   }
 }
-@media only screen and (max-width: 797px) {
-  .nav label {
-    display: block;
-    cursor: pointer;
-  }
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  .menu a {
-    display: block;
-    border-bottom: 1px solid white;
-  }
-  #toggle:checked + .menu {
-    display: block;
-  }
-}
-
-
