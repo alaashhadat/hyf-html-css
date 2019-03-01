@@ -1,226 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" "initial-scale=1.0">
-    <title>homework3</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="logo  "  > 
-      <img src="https://www.rijksoverheid.nl/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-ro.svg" alt="logo">
-    </div> 
-    <div> 
-    <div class="nav">
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle">
-      <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Tropical</a>
-        <a href="#">Subjects</a>
-        <a href="#">Ministeries</a>
-        <a href="#">Government</a>
-        <a href="#">Documents</a>
-        <a href="#">Join</a>
-  </div>
-  </div>  
-    <div class="searchform">
-      <ul class="must-viewed" >
-        <h3> Must viewed</h3>
-        <li>working in education</li>
-        <li>minimum wage</li>
-        <li>school holidays</li>
-        <li>Requirements passport photo for passport or ID card</li>
-        <li>Form traveling with a minor to a foreign country</li>
-      </ul>
-      <div class="form">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>homework3</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div class="logo " > 
+   <img src="https://www.rijksoverheid.nl/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-ro.svg" alt="logo">
+  </div> 
+  <!---------------------------------------------------->
+  <div class="nav">
+    <button onclick="open_close()">&#9776;</button>   
+    <input type="text" id="search-keyword" class="searchinput" name="search" title="search here" placeholder="search"/> 
+    <div class="menu" id="menu">
+     <a href="#">Home</a>
+     <a href="#">Tropical</a>
+     <a href="#">Subjects</a>
+     <a href="#">Ministeries</a>
+     <a href="#">Government</a>
+     <a href="#">Documents</a>
+     <a href="#">Join</a>
+    </div>
+ </div>
+  <div class="searchform">
+     <ul class="must-viewed" >
+      <h3> Must viewed</h3>
+      <li><i class="fa fa-angle-right"></i> working in education</li>
+      <li><i class="fa fa-angle-right"></i> minimum wage</li>
+      <li><i class="fa fa-angle-right"></i> school holidays</li>
+      <li><i class="fa fa-angle-right"></i> Requirements passport photo for passport or ID card</li>
+      <li><i class="fa fa-angle-right"></i> Form traveling with a minor to a foreign country</li>
+     </ul>
+     <div class="form">
         <form method="get" action="/search" id="search-form">
-          <lable for="search-keyword"> </lable>
-          <input type="text" id="search-keyword" class="searchinput" name="search"
-          title="search here" placeholder="search"/> 
-          <button type="submit" ><i class="fas fa-search" </i></button>
-      </form>
-      </div>
-      </div>
-      <div class="fix"></div>
+         <lable for="search-keyword"> </lable>
+         <input type="text" id="search-keyword" class="searchinput hidden" name="search"
+         title="search here" placeholder="search"/> 
+         <button type="submit" ><i class="fa fa-search"></i></button>
+       </form>
      </div>
-      <div class="posts">
-        <ul class="grid-flex">
-        <li class="grid-item"> 
-          <h3>Taxes, benefits and allowances</h3>
-            <p>Assistance, AOW, unemployment benefit, Income tax, Wajong</p> 
+   </div> 
+    <!---------------------------------------------------->
+   <div class="fix"></div>
+  
+   <div class="posts">
+    <ul class="grid-flex">
+    <li class="grid-item"> 
+     <h3>Taxes, benefits and allowances</h3>
+      <p>Assistance, AOW, unemployment benefit, Income tax, Wajong</p> 
+    </li>
+    <li class="grid-item"><h3>Build and live</h3>
+     <p>Rental home, Rent increase, Residential property, Energy label, Building regulations</p>
+    </li>
+    <li class="grid-item"><h3>Economy</h3>
+      <p>Entrepreneurship and innovation, Public finances, Sustainable economy, Self-employed without personnel</p>
+    </li>
+    <li class="grid-item">
+     <h3>Family, care and health</h3>
+     <p>Health insurance, Care and support at home, Separating or separating</p>
+    </li>
+    <li class="grid-item">
+     <h3>International cooperation</h3>
+     <p>European Union, Brexit, Human Rights, EU Trade Treaties</p>
+    </li>
+    <li class="grid-item">
+     <h3>Climate, environment and nature</h3>
+     <p>Gas production in Groningen, Climate change, Sustainable energy, Animal welfare</p>
+    </li>
+    <li class="grid-item">
+     <h3>Migration and travel</h3>
+    <p>Passport and identity card, Dutch nationality. Traveling with children</p>
+    </li>
+    <li class="grid-item">
+     <h3>Education</h3>
+     <p>School holidays, Higher education, Primary education, Working in education</p>
+    </li>
+    <li class="grid-item">
+     <h3>Government and democracy</h3>
+     <p>Privacy and personal data, Municipalities, Provinces, Royal House</p>
+    </li>
+    <li class="grid-item">
+     <h3>Law, security and defense</h3>
+     <p>Identity fraud, terrorism and national security, parental authority and custody</p>
+    </li>
+    <li class="grid-item">
+     <h3>Traffic and transport</h3>
+     <p>Driving license, Traffic regulations, Public transport, Traffic safety, Special vehicles</p>
+    </li>
+    <li class="grid-item">
+     <h3>Work</h3>
+     <p>Self-employed without personnel (zzp), Minimum wage, Parental leave, Working hours, Dismissal</p>
+    </li>
+    </ul>
+   </div>
+  
+   <div>
+    <ul class="grid-more-posts">
+     <li class="grid-more-posts-item">
+      <a href="#">
+      <img class="more-posts-img"src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2018/brexit-uitgelicht.jpg" alt="Brexit">
+      <h3>Brexit</h3>
+      <p>The status of the Brexit. And what will happen after the United Kingdom has left the European Union?</p>
+      </a>
+     </li>
+     <li class="grid-more-posts-item">
+      <a href="#">
+       <img class="more-posts-img" src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/onderwerpen/o/ontslag/ontslag.jpg" alt="hollandse-hoogte">
+       <h3>Compensation for dismissal</h3>
+       <p>How high is the financial compensation you receive when you resign?</p>
+      </a>
+     </li>
+     <li class="grid-more-posts-item">
+      <a href="#">
+        <img class="more-posts-img" src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/onderwerpen/h/huiselijk-geweld.jpg" alt="stop">
+       <h3>It does not stop until you do something</h3>
+       <p>It does not stop until you do something</p>
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="news-ticker">
+    <h2 class="news">News</h2>
+     <ul>
+      <li>
+       <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Exploratory research RIVM to chromium-6 in prisons completed</a>
+       <br><span>20-02-2019 | 13:40</span>
+       <p>During a meeting of the International Maritime Organization (IMO), the Netherlands today adopted the Hong Kong Convention ...</p>
+       
+      </li>
+      <li>
+        <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Jos Brink prize 2019</a>
+        <br><span>20-02-2019 | 13:40</span>
+        <p>On May 19, 2019, Minister Ingrid van Engelshoven (emancipation) will be awarded the Jos Brink Oeuvre Prize and the Jos Brink Innovation Prize ...</p>
+        
+       </li>
+       <li>
+        <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Judith Sluiter Communications Director at LNV</a>
+        <br><span>20-02-2019 | 13:40</span>
+        <p>Judith Sluiter will be appointed as Director Communication of the Ministry of Agriculture, Nature and ...</p>
+        
+       </li>
+       <li>
+        <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">
+         
+          40 million extra for municipalities in civic integration</a>
+        <br><span>20-02-2019 | 13:40</span>
+        <p>Minister Koolmees (Social Affairs and Employment) will make 40 million extra available for municipalities in the next two years, in order to start actively ...</p>
+        
+       </li>
+       <li>
+        <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">The asylum inflow from week 7 amounted to approximately 600
+        </a>
+        <br> <span>20-02-2019 | 13:40</span>
+        <p>The asylum inflow of week 7, consisting of first asylum applications, repeated asylum applications, resettlement, reinstatement and ...</p>
+        
+       </li>
+       <li>
+        <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Negotiation of tax treaties in 2019</a>
+        <br> <span>20-02-2019 | 13:40</span>
+        <p>The Dutch government is constantly negotiating with other countries about (new) tax treaties. In the overview that every ...</p>
         </li>
-        <li class="grid-item"><h3>Build and live</h3>
-          <p>Rental home, Rent increase, Residential property, Energy label, Building regulations</p>
-        </li>
-        <li class="grid-item"><h3>Economy</h3>
-            <p>Entrepreneurship and innovation, Public finances, Sustainable economy, Self-employed without personnel</p>
-        </li>
-        <li class="grid-item">
-          <h3>Family, care and health</h3>
-          <p>Health insurance, Care and support at home, Separating or separating</p>
-        </li>
-        <li class="grid-item">
-          <h3>International cooperation</h3>
-          <p>European Union, Brexit, Human Rights, EU Trade Treaties</p>
-        </li>
-        <li class="grid-item">
-          <h3>Climate, environment and nature</h3>
-          <p>Gas production in Groningen, Climate change, Sustainable energy, Animal welfare</p>
-        </li>
-        <li class="grid-item">
-          <h3>Migration and travel</h3>
-        <p>Passport and identity card, Dutch nationality. Traveling with children</p>
-        </li>
-        <li class="grid-item">
-          <h3>Education</h3>
-          <p>School holidays, Higher education, Primary education, Working in education</p>
-        </li>
-        <li class="grid-item">
-          <h3>Government and democracy</h3>
-          <p>Privacy and personal data, Municipalities, Provinces, Royal House</p>
-        </li>
-        <li class="grid-item">
-          <h3>Law, security and defense</h3>
-          <p>Identity fraud, terrorism and national security, parental authority and custody</p>
-        </li>
-        <li class="grid-item">
-          <h3>Traffic and transport</h3>
-          <p>Driving license, Traffic regulations, Public transport, Traffic safety, Special vehicles</p>
-        </li>
-        <li class="grid-item">
-          <h3>Work</h3>
-          <p>Self-employed without personnel (zzp), Minimum wage, Parental leave, Working hours, Dismissal</p>
-        </li>
-        </ul>
+     </ul>
+    </div>
+    <div class="morenews">
+     <div class="news">
+      <a href="https://www.rijksoverheid.nl/actueel/nieuws"> More news</a>
+     </div>
+     <div class="questions">
+      <ul>
+       <li>
+        <h3> Questions? </h3>
+        <p>call rijksoverheid</p>
+        <h3>1400</h3>
+       </li>
+      </ul>
+      <ul>
+       <li class="second"> 
+        <p>Meld u aan voor de
+          Nieuwsbrief</p>
+        <h3>Regeringsnieuws</h3>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <footer>
+     <div class="for"> 
+      <h3>De Rijksoverheid. Voor Nederland</h3>
+     </div>
+     <div class="for" > 
+      <div class="service">
+       <ul>
+        <li><h3>Service </h3></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Subscribe</a></li>
+        <li><a href="#">RSS</a></li>
+        <li><a href="#">Vacancies</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Archive</a></li>
+       </ul>
       </div>
-    
-      <div>
-        <ul class="grid-more-posts">
-          <li class="grid-more-posts-item">
-            <a href="#">
-            <img class="more-posts-img"src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2018/brexit-uitgelicht.jpg" alt="Brexit">
-            <h3>Brexit</h3>
-            <p>The status of the Brexit. And what will happen after the United Kingdom has left the European Union?</p>
-            </a>
-          </li>
-          <li class="grid-more-posts-item">
-            <a href="#">
-              <img class="more-posts-img" src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/onderwerpen/o/ontslag/ontslag.jpg" alt="hollandse-hoogte">
-              <h3>Compensation for dismissal</h3>
-              <p>How high is the financial compensation you receive when you resign?</p>
-            </a>
-          </li>
-          <li class="grid-more-posts-item">
-            <a href="#">
-               <img class="more-posts-img" src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/onderwerpen/h/huiselijk-geweld.jpg" alt="stop">
-              <h3>It does not stop until you do something</h3>
-              <p>It does not stop until you do something</p>
-            </a>
-          </li>
-        </ul>
+      <div class="about-us">
+       <ul>
+        <li><h3> About this site </h3></li>
+        <li><a href="#">About Rijksoverheid.nl</a></li>
+        <li><a href="#">Laws and regulations</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Open data</a></li>
+       </ul>
       </div>
-      <div class="news-ticker">
-        <h2 class="news">News</h2>
-          <ul>
-            <li>
-              <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Exploratory research RIVM to chromium-6 in prisons completed</a>
-              <br><span>20-02-2019 | 13:40</span>
-              <p>During a meeting of the International Maritime Organization (IMO), the Netherlands today adopted the Hong Kong Convention ...</p>
-              
-            </li>
-            <li>
-                <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Jos Brink prize 2019</a>
-                <br><span>20-02-2019 | 13:40</span>
-                <p>On May 19, 2019, Minister Ingrid van Engelshoven (emancipation) will be awarded the Jos Brink Oeuvre Prize and the Jos Brink Innovation Prize ...</p>
-                
-              </li>
-              <li>
-                <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Judith Sluiter Communications Director at LNV</a>
-                <br><span>20-02-2019 | 13:40</span>
-                <p>Judith Sluiter will be appointed as Director Communication of the Ministry of Agriculture, Nature and ...</p>
-                
-              </li>
-              <li>
-                <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">
-                  
-                    40 million extra for municipalities in civic integration</a>
-                <br><span>20-02-2019 | 13:40</span>
-                <p>Minister Koolmees (Social Affairs and Employment) will make 40 million extra available for municipalities in the next two years, in order to start actively ...</p>
-                
-              </li>
-              <li>
-                <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">The asylum inflow from week 7 amounted to approximately 600
-                </a>
-               <br> <span>20-02-2019 | 13:40</span>
-                <p>The asylum inflow of week 7, consisting of first asylum applications, repeated asylum applications, resettlement, reinstatement and ...</p>
-                
-              </li>
-              <li>
-                <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/12/verkennend-onderzoek-rivm-naar-chroom-6-in-gevangenissen-afgerond">Negotiation of tax treaties in 2019</a>
-                <br> <span>20-02-2019 | 13:40</span>
-                <p>The Dutch government is constantly negotiating with other countries about (new) tax treaties. In the overview that every ...</p>
-                </li>
-          </ul>
-        </div>
-        <div class="morenews">
-          <div class="news">
-            <a href="https://www.rijksoverheid.nl/actueel/nieuws"> More news</a>
-          </div>
-          <div class="questions">
-            <ul>
-              <li>
-                <h3> Questions? </h3>
-                <p>call rijksoverheid</p>
-                <h3>1400</h3>
-              </li>
-            </ul>
-            <ul>
-              <li class="second"> 
-                <p>Meld u aan voor de
-                    Nieuwsbrief</p>
-                <h3>Regeringsnieuws</h3>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <footer>
-          <div class="for"> 
-            <h3>De Rijksoverheid. Voor Nederland</h3>
-          </div>
-          <div class="for" > 
-            <div class="service">
-              <ul>
-                <li><h3>Service </h3></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">RSS</a></li>
-                <li><a href="#">Vacancies</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Archive</a></li>
-              </ul>
-            </div>
-            <div class="about-us">
-              <ul>
-                <li><h3> About this site </h3></li>
-                <li><a href="#">About Rijksoverheid.nl</a></li>
-                <li><a href="#">Laws and regulations</a></li>
-                <li><a href="#">Copyright</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Open data</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-        <div class="language">
-            <span><a href="https://www.government.nl"></a>Dutch</span>
-            <span><a href="https://www.gobiernodireino.nl/" ></a>English</span>
-            <span><a href="https://www.gobiernudireino.nl/"> </a>Papiamento</span>
-            <span><a href="https://www.gobiernudireino.nl/"></a>Papiamento</span>
-            <span><a href="https://www.rijksoverheid.nl/onderwerpen/overheidscommunicatie/nederlandse-gebarentaal"></a>Dutch sign language</span>
-        </div>
-  </body>
-  </html>
+     </div>
+    </footer>
+    <div class="language">
+      <span><a href="https://www.government.nl"></a>Dutch</span>
+      <span><a href="https://www.gobiernodireino.nl/" ></a>English</span>
+      <span><a href="https://www.gobiernudireino.nl/"> </a>Papiamento</span>
+      <span><a href="https://www.gobiernudireino.nl/"></a>Papiamento</span>
+      <span><a href="https://www.rijksoverheid.nl/onderwerpen/overheidscommunicatie/nederlandse-gebarentaal"></a>Dutch sign language</span>
+    </div>
+    <script>
+      function open_close(){
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
+ </body>
+ </html>
